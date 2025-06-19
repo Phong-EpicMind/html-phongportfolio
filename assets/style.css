@@ -1,25 +1,64 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 40px;
-    background-color: #f5f5f5;
-    color: #333;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #007acc;
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --accent-color: #f0f0f0;
 }
-h1, h2, h3{
-    margin: 0 0 10px;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 40px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
-a{
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.link-card {
+    background: var(--accent-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.link-card img {
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+a {
+    color: var(--primary-color);
     text-decoration: none;
-    color: #007acc;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
-img{
+
+img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px 0;
 }
-hr{
+
+hr {
     margin: 20px 0;
 }
